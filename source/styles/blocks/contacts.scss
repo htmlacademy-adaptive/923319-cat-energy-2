@@ -1,0 +1,21 @@
+/* contacts */
+.contacts__wrapper {
+  background-color: $basic-color;
+}
+
+.contacts__text {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $special-contrast-color;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  color: $special-dark-secondary-contrast-color;
+}

@@ -1,0 +1,17 @@
+/* page */
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: $primary-font;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-dark-secondary-contrast-color;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $basic-color;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,25 @@
+/* example */
+.example {
+  background-color: $special-secondary-contrast-color;
+}
+
+.example__title {
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $contrast-color;
+}
+
+.example__data-list {
+  @include reset-ul;
+}
+
+.example__cost {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $contrast-color;
+  text-transform: uppercase;
+}

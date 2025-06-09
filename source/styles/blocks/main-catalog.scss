@@ -1,0 +1,12 @@
+/* main-catalog */
+.main-catalog__title {
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $contrast-color;
+}
+
+.main-catalog__list {
+  @include reset-ul;
+}

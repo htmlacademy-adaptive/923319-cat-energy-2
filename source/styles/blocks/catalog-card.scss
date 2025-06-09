@@ -1,0 +1,22 @@
+/* catalog-card */
+.catalog-card__link {
+  text-decoration: none;
+  color: $special-dark-third-contrast-color;
+}
+
+.catalog-card__title {
+  font-size: 16px;
+  font-family: $second-font;
+  line-height: 20px;
+  font-weight: 400;
+  color: $special-contrast-color;
+  text-transform: uppercase;
+}
+
+.catalog-card__properties {
+  font-size: 12px;
+  font-family: $primary-font;
+  line-height: 16px;
+  font-weight: 400;
+  color: $special-dark-secondary-contrast-color;
+}

@@ -1,0 +1,21 @@
+/* second-catalog-card */
+.second-catalog-card__link {
+  text-decoration: none;
+  color: $special-dark-third-contrast-color;
+}
+
+.second-catalog-card__title {
+  font-size: 16px;
+  font-family: $second-font;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.second-catalog-card__offers {
+  font-size: 14px;
+  font-family: $primary-font;
+  line-height: 14px;
+  font-weight: 400;
+  color: $special-dark-secondary-contrast-color;
+}

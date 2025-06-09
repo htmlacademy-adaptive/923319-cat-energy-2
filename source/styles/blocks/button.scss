@@ -1,0 +1,22 @@
+/* button */
+.button {
+  font-size: 16px;
+  font-family: $second-font;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--main {
+  color: $basic-color;
+  background-color: $basic-bg-color;
+}
+
+.button--second {
+  color: $special-dark-secondary-contrast-color;
+  background-color: $secondary-contrast-color;
+}
+
+.button--to-look {
+  color: $contrast-color;
+}

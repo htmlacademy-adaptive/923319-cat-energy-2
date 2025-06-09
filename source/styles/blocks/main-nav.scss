@@ -1,0 +1,22 @@
+/* main-nav */
+.main-nav {
+  background-color: $basic-color;
+}
+
+.main-nav__list {
+  @include reset-ul;
+}
+
+.main-nav__item {
+  font-size: 20px;
+  font-family: $second-font;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $contrast-color;
+  background-color: $basic-color;
+}
+
+.main-nav__link {
+  color: $contrast-color;
+  text-decoration: none;
+}

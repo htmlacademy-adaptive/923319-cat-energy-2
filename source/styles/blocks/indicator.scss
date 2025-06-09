@@ -1,0 +1,14 @@
+.indicator__value {
+  font-family: $second-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $contrast-color;
+  text-transform: uppercase;
+}
+
+.indicator__name {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+}

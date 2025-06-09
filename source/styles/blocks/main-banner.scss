@@ -1,0 +1,25 @@
+/* main-banner */
+
+.main-banner {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, #ffffff 37%), image-set("../images/banner-background-cat-mobile@1x.jpg" 1x, "../images/banner-background-cat-mobile@2x.jpg" 2x), linear-gradient(#4f4e54, #434248);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%, auto, 100%;
+  min-height: 480px;
+}
+
+.main-banner__title {
+  font-size: 36px;
+  font-family: $second-font;
+  line-height: 36px;
+  font-weight: 400;
+  color: $basic-color;
+}
+
+.main-banner__text {
+  font-size: 14px;
+  font-family: $second-font;
+  line-height: 14px;
+  color: $basic-color;
+  text-transform: uppercase;
+}
