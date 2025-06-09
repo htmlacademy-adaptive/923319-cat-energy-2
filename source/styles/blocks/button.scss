@@ -19,4 +19,16 @@
 
 .button--to-look {
   color: $contrast-color;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    right: -39px;
+    background-image: url("../../icons/stack.svg#icon-arrow");
+    background-repeat: no-repeat;
+  }
 }

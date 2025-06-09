@@ -1,6 +1,20 @@
 /* copyright */
 .copyright {
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#icon-html-academy");
+    mask-repeat: no-repeat;
+    background-color: $btn-bg-color;
+  }
+
+  &:hover::after {
+    background-color: $basic-bg-color;
+  }
 }
 
 .copyright__text {

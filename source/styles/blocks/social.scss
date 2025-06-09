@@ -2,3 +2,49 @@
 .social__list {
   @include reset-ul;
 }
+
+.social__link {
+  min-width: 28px;
+  min-height: 22px;
+  display: block;
+
+  &:hover::before {
+    background-color: $basic-bg-color;
+  }
+}
+
+.social__link--vkontakte {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../icons/stack.svg#icon-vkontakte");
+    mask-repeat: no-repeat;
+    background-color: $btn-bg-color;
+  }
+}
+
+.social__link--youtube {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../icons/stack.svg#icon-youtube");
+    mask-repeat: no-repeat;
+    background-color: $btn-bg-color;
+  }
+}
+
+.social__link--telegram {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../icons/stack.svg#icon-telegram");
+    mask-repeat: no-repeat;
+    background-color: $btn-bg-color;
+  }
+}
