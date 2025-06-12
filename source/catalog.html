@@ -16,10 +16,14 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="#">
+      <a class="main-header__logo logo" href="index.html">
         <span class="visually-hidden">Логотип</span>
-        <img class="logo__trademark" src="img/logotype-trademark.svg" width="33" height="38" alt="Товарный знак Cat Energy">
-        <img class="logo__text" src="img/logotype-text.svg" width="101" height="18" alt="Логотип Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logotype-trademark-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logotype-trademark-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__trademark" src="images/logotype-trademark-mobile.svg" width="33" height="38" alt="Товарный знак Cat Energy">
+        </picture>
+        <img class="logo__text" src="images/logotype-text.svg" width="101" height="18" alt="Логотип Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -438,7 +442,7 @@
     </div>
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="#">
-        <img class="logo__text" src="img/logotype-text.svg" width="101" height="18" alt="Логотип Cat Energy">
+        <img class="logo__text" src="images/logotype-text.svg" width="128" height="24" alt="Логотип Cat Energy">
       </a>
       <div class="main-footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>

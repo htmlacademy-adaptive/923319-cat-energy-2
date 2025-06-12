@@ -1,4 +1,19 @@
-/* main-footer */
-.main-footer__wrapper {
+.main-footer {
   background-color: $secondary-contrast-color;
+}
+
+.main-footer__wrapper {
+  margin: 20px;
+}
+
+.main-footer__logo {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__social {
+  padding: 20px;
+  border-bottom: 1px solid #d9d9d9;
 }

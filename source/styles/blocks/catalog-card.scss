@@ -1,4 +1,17 @@
-/* catalog-card */
+.catalog-card--to-all {
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#icon-plus");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+}
+
 .catalog-card__link {
   text-decoration: none;
   color: $special-dark-third-contrast-color;

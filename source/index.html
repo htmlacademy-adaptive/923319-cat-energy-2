@@ -18,7 +18,11 @@
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="#">
         <span class="visually-hidden">Логотип</span>
-        <img class="logo__trademark" src="images/logotype-trademark.svg" width="33" height="38" alt="Товарный знак Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logotype-trademark-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logotype-trademark-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__trademark" src="images/logotype-trademark-mobile.svg" width="33" height="38" alt="Товарный знак Cat Energy">
+        </picture>
         <img class="logo__text" src="images/logotype-text.svg" width="101" height="18" alt="Логотип Cat Energy">
       </a>
       <nav class="main-nav">
@@ -117,11 +121,9 @@
             <source type="image/png" media="(min-width: 768px)" srcset="images/view-after-tablet@1x.png 1x, images/view-after-tablet@2x.png 2x" width="560" height="512">
             <img class="slider__img slider__img--after" src="images/view-after-mobile@1x.png" srcset="images/view-after-mobile@2x.png 2x" width="280" height="256" alt="Борис после замены корма на Cat Energy Slim">
           </picture>
-          <div class="example__slider-dragme slider__dragme">
-            <button class="slider__dragme-button" type="button">
-              <span class="visually-hidden">Передвинуть слайдер</span>
-            </button>
-          </div>
+          <button class="slider__button" type="button">
+            <span class="visually-hidden">Передвинуть слайдер</span>
+          </button>
         </div>
       </div>
     </section>
@@ -145,7 +147,7 @@
     </div>
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="#">
-        <img class="logo__text" src="images/logotype-text.svg" width="101" height="18" alt="Логотип Cat Energy">
+        <img class="logo__text" src="images/logotype-text.svg" width="128" height="24" alt="Логотип Cat Energy">
       </a>
       <div class="main-footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>

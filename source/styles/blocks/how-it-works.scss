@@ -11,3 +11,40 @@
 .how-it-works__list {
   @include reset-ul;
 }
+
+.how-it-works__item {
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.how-it-works__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $basic-bg-color;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  display: block;
+}
+
+.how-it-works__item--nutrients::before {
+  background-size: 30px 32px;
+  background-image: url("../../icons/stack.svg#icon_leaf");
+}
+
+.how-it-works__item--substance::before {
+  background-size: 26px 28px;
+  background-image: url("../../icons/stack.svg#icon-solution");
+}
+
+.how-it-works__item--exchange::before {
+  background-size: 25px 30px;
+  background-image: url("../../icons/stack.svg#icon_eat");
+}
+
+.how-it-works__item--time::before {
+  background-size: 25px 30px;
+  background-image: url("../../icons/stack.svg#icon-time");
+}

@@ -3,6 +3,19 @@
   background-color: $basic-color;
 }
 
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-image: url("../../icons/stack.svg#nav-toggle");
+  background-repeat: no-repeat;
+  background-color: $basic-color;
+}
+
+.main-nav__toggle--active {
+  background-image: url("../../icons/stack.svg#nav-toggle-active");
+}
+
 .main-nav__list {
   @include reset-ul;
 }
