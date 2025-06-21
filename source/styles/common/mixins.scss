@@ -12,3 +12,9 @@
   list-style-type: none;
   padding: 0;
 }
+
+@mixin max-size {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}

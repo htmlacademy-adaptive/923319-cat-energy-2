@@ -8,6 +8,11 @@
   min-height: 480px;
 }
 
+.main-banner__wrapper {
+  position: relative;
+  margin: 0 20px;
+}
+
 .main-banner__title {
   font-size: 36px;
   font-family: $second-font;
@@ -15,6 +20,9 @@
   font-weight: 400;
   color: $basic-color;
   text-align: center;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
 }
 
 .main-banner__text {
@@ -24,4 +32,105 @@
   color: $basic-color;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+}
+
+.main-banner__img-wrapper {
+  margin-top: 30px;
+}
+
+.main-banner__img {
+  display: block;
+  margin: 25px auto;
+}
+
+.main-banner__button {
+  text-align: center;
+  padding: 10px;
+  display: block;
+  position: absolute;
+  bottom: -342px;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-banner {
+    background: none;
+  }
+
+  .main-banner__wrapper {
+    margin: 0 30px;
+  }
+
+  .main-banner__title {
+    color: $contrast-color;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    max-width: 416px;
+    margin-left: 90px;
+  }
+
+  .main-banner__text {
+    color: $contrast-color;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    max-width: 416px;
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .main-banner__button {
+    width: auto;
+    padding: 14px 26px;
+    margin-left: 90px;
+    bottom: -130px;
+    left: auto;
+    transform: none;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-banner__wrapper {
+    margin: 0;
+  }
+
+  .main-banner__title {
+    margin-left: 79px;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .main-banner__text {
+    margin-left: 80px;
+    margin-bottom: 51px;
+  }
+
+  .main-banner__button {
+    position: static;
+    width: fit-content;
+    margin-left: 80px;
+    padding: 15px 28px;
+  }
+
+  .main-banner__img-wrapper {
+    margin-top: 0;
+  }
+
+  .main-banner__img {
+    margin-left: -163px;
+    margin-top: 0;
+  }
 }

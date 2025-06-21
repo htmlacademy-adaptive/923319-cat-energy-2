@@ -1,3 +1,7 @@
+.programs__wrapper {
+  margin: 20px;
+}
+
 .programs__list {
   @include reset-ul;
 }
@@ -5,8 +9,8 @@
 .programs__item {
   background-color: $secondary-contrast-color;
   position: relative;
-  padding: 20px;
-  margin: 20px;
+  padding: 21px 20px 20px;
+  margin-bottom: 20px;
 }
 
 .programs__item--slim::before {
@@ -22,8 +26,8 @@
 
 .programs__item--pro::before {
   content: "";
-  width: 67px;
-  height: 50px;
+  width: 69px;
+  height: 56px;
   position: absolute;
   top: auto;
   left: 11px;
@@ -38,10 +42,107 @@
   font-weight: 400;
   color: $contrast-color;
   text-transform: uppercase;
-  margin: 0 0 29px 90px;
+  margin: 9px 0 29px 70px;
 }
 
 .programs__item-text {
   border-bottom: 1px solid $border-color;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
+  margin: 0;
+}
+
+.programs__button {
+  margin: 17px 0 0;
+  width: fit-content;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__wrapper {
+    margin: 30px;
+  }
+
+  .programs__item {
+    padding: 77px 45% 57px 53px;
+    margin-bottom: 30px;
+  }
+
+  .programs__item--slim::before {
+    width: 200px;
+    height: 211px;
+    top: 22%;
+    left: 63%;
+  }
+
+  .programs__item--pro::before {
+    width: 268px;
+    height: 200px;
+    top: 24%;
+    left: 58%;
+  }
+
+  .programs__item-title {
+    margin: 0 0 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programs__item-text {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
+
+  .programs__button {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    @include max-size;
+    margin-top: 110px;
+  }
+
+  .programs__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
+    gap: 80px;
+  }
+
+  .programs__item {
+    padding: 77px 61px 60px 52px;
+  }
+
+  .programs__item--slim::before {
+    width: 100px;
+    height: 106px;
+    top: 39px;
+    left: 52px;
+  }
+
+  .programs__item--pro::before {
+    width: 134px;
+    height: 100px;
+    top: 45px;
+    left: 34px;
+  }
+
+  .programs__item-title {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
+
+  .programs__item-text {
+    padding-bottom: 0;
+  }
+
+  .programs__button {
+    gap: 26px;
+    margin: 11px 0 0;
+  }
 }

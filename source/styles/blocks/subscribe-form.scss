@@ -7,3 +7,10 @@
   color: $special-dark-secondary-contrast-color;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .subscribe-form__button {
+    padding: 15px 70px;
+    margin: 0;
+  }
+}

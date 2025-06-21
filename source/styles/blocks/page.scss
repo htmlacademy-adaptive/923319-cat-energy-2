@@ -15,3 +15,32 @@
   display: flex;
   flex-direction: column;
 }
+
+
+@media (min-width: $tablet-width) {
+  .page__header {
+    @include max-size;
+    display: grid;
+    grid-template-columns: 202px 1fr;
+    width: 100%;
+    padding: 25px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body--index {
+    background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), image-set("../images/banner-background-cat-desktop@1x.jpg" 1x, "../images/banner-background-cat-desktop@2x.jpg" 2x), linear-gradient(#4f4e54, #434248);
+    background-repeat: no-repeat;
+    background-position: top right, top right, top right;
+    background-size: 100% 694px, 720px 694px, 100% 694px;
+  }
+
+  .page__header {
+    margin-top: 30px;
+    padding: 25px 0;
+  }
+
+  .page__header--index {
+    grid-template-columns: 50% 50%;
+  }
+}

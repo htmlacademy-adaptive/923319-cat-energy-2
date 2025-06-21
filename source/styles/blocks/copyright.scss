@@ -1,9 +1,9 @@
-/* copyright */
 .copyright {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
+  align-items: center;
 
   &::after {
     content: "";
@@ -25,4 +25,10 @@
   font-size: 16px;
   line-height: 20px;
   color: $special-dark-secondary-contrast-color;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 0;
+  }
 }

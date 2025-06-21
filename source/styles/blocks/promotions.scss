@@ -5,6 +5,7 @@
   line-height: 24px;
   font-weight: 400;
   color: $contrast-color;
+  margin: 0 40px 0 20px;
 }
 
 .promotions__text {
@@ -13,4 +14,53 @@
   line-height: 24px;
   font-weight: 400;
   color: $contrast-color;
+  margin: 20px;
+  text-align: center;
+}
+
+.promotions__form {
+  margin: 20px;
+}
+
+.subscribe-form__email {
+  width: 100%;
+}
+
+.subscribe-form__button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .promotions__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 80px 70px 66px;
+  }
+
+  .promotions__text {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 68px 24px;
+  }
+
+  .promotions__form {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin: 24px auto 80px;
+    max-width: 752px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotions__title {
+    @include max-size;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .promotions__wrapper {
+    @include max-size;
+  }
 }

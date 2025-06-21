@@ -1,4 +1,7 @@
-/* second-catalog-card */
+.second-catalog-card {
+  border-top: 1px solid $second-border-color;
+}
+
 .second-catalog-card__link {
   text-decoration: none;
   color: $special-dark-third-contrast-color;
@@ -18,4 +21,21 @@
   line-height: 14px;
   font-weight: 400;
   color: $special-dark-secondary-contrast-color;
+}
+
+.second-catalog-card__offer {
+  display: flex;
+}
+
+.second-catalog-card__button {
+  padding: 10px;
+  display: block;
+  margin-bottom: 19px;
+}
+
+@media (min-width: $desktop-width) {
+  .second-catalog-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

@@ -1,4 +1,26 @@
-/* main-header */
-.main-header {
-  background-color: $basic-color;
+.main-header__wrapper {
+  margin: 12px 20px 11px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__logo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    margin: 0;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo {
+    grid-template-columns: auto auto;
+    justify-content: start;
+    gap: 14px;
+  }
 }

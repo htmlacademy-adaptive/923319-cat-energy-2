@@ -5,12 +5,40 @@
   line-height: 24px;
   font-weight: 400;
   color: $contrast-color;
+  margin: 25px 20px 36px;
 }
 
 .second-catalog__list {
   @include reset-ul;
+  margin: 20px;
 }
 
 .second-catalog__banner {
   margin: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .second-catalog__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .second-catalog__title {
+    @include max-size;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .second-catalog__wrapper {
+    @include max-size;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    margin: 0 110px;
+  }
+
+  .second-catalog__banner {
+    width: 245px;
+  }
 }

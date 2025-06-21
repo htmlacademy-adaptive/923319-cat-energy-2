@@ -2,6 +2,23 @@
   position: relative;
 }
 
+.slider__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: min(90vh, 90vw);
+}
+
+.slider__img--before {
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider__img--after {
+  z-index: 10;
+  clip-path: inset(0 0 0 50%);
+}
+
 .slider__button {
   height: 100%;
   position: absolute;
@@ -12,6 +29,7 @@
   border-radius: 2px;
   padding-inline: 0;
   background-color: $btn-bg-color;
+  z-index: 20;
   cursor: pointer;
 
   &:hover {
