@@ -1,11 +1,28 @@
-/* second-catalog */
 .second-catalog__title {
   font-family: $second-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $contrast-color;
-  margin: 25px 20px 36px;
+  margin: 24px 34px 36px 20px;
+  padding-right: 40px;
+  position: relative;
+  box-shadow: -40px 0 $basic-color;
+  background-color: $basic-color;
+  width: fit-content;
+}
+
+.second-catalog__title::before {
+  content: "";
+  z-index: -1;
+  background-color: $basic-bg-color;
+  width: 100vw;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  box-shadow: 100vw 0 $basic-bg-color;
 }
 
 .second-catalog__list {
@@ -14,28 +31,50 @@
 }
 
 .second-catalog__banner {
-  margin: 20px;
+  margin: 54px 20px 38px;
 }
 
 @media (min-width: $tablet-width) {
+  .second-catalog__wrapper {
+    margin: 0 30px;
+  }
+
   .second-catalog__title {
     font-size: 32px;
     line-height: 32px;
+    margin: 56px 0 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: none;
+  }
+
+  .second-catalog__list {
+    margin: 80px 0 69px;
+  }
+
+  .second-catalog__banner {
+    margin: 54px 0 38px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .second-catalog__list {
+    margin: 0 80px 0 0;
+  }
+
   .second-catalog__title {
-    @include max-size;
     font-size: 40px;
     line-height: 40px;
+    margin: 70px 0 80px -40px;
   }
 
   .second-catalog__wrapper {
     @include max-size;
+  }
+
+  .second-catalog__list-wrapper {
     display: grid;
     grid-template-columns: 1fr 245px;
-    margin: 0 110px;
   }
 
   .second-catalog__banner {

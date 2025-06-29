@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   overflow: hidden;
-  width: min(90vh, 90vw);
+  width: 280px;
 }
 
 .slider__img--before {
@@ -77,4 +77,10 @@
   position: absolute;
   top: calc(50% - 9px);
   left: -10px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__img {
+    width: 560px;
+  }
 }

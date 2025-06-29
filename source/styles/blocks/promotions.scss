@@ -1,11 +1,28 @@
-/* promotions */
 .promotions__title {
   font-family: $second-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $contrast-color;
-  margin: 0 40px 0 20px;
+  margin: 0 108px 0 20px;
+  padding-right: 40px;
+  position: relative;
+  box-shadow: -40px 0 $basic-color;
+  background-color: $basic-color;
+  width: fit-content;
+}
+
+.promotions__title::before {
+  content: "";
+  z-index: -1;
+  background-color: $basic-bg-color;
+  width: 100vw;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  box-shadow: 100vw 0 $basic-bg-color;
 }
 
 .promotions__text {
@@ -14,29 +31,20 @@
   line-height: 24px;
   font-weight: 400;
   color: $contrast-color;
-  margin: 20px;
+  margin: 33px 20px 0;
   text-align: center;
 }
 
 .promotions__form {
-  margin: 20px;
-}
-
-.subscribe-form__email {
-  width: 100%;
-}
-
-.subscribe-form__button {
-  width: 100%;
-  margin-top: 16px;
-  padding: 15px;
+  margin: 24px 20px 40px;
 }
 
 @media (min-width: $tablet-width) {
   .promotions__title {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 32px;
     margin: 80px 70px 66px;
+    padding-right: 40px;
   }
 
   .promotions__text {
@@ -49,18 +57,27 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     margin: 24px auto 80px;
-    max-width: 752px;
+    max-width: 632px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promotions__title {
-    @include max-size;
     font-size: 40px;
     line-height: 40px;
+    margin: 95px 0 66px;
   }
 
   .promotions__wrapper {
     @include max-size;
+  }
+
+  .promotions__text {
+    margin: 71px 68px 24px;
+  }
+
+  .promotions__form {
+    margin: 24px auto 105px;
+    max-width: 752px;
   }
 }

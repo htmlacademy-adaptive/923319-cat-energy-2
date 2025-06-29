@@ -2,9 +2,3 @@
 .main-container {
   flex-grow: 1;
 }
-
-@media (min-width: $desktop-width) {
-  .main-container__banner {
-    @include max-size;
-  }
-}

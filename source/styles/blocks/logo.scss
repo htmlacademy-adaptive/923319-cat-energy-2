@@ -10,17 +10,6 @@
   }
 }
 
-.logo__text {
-  margin-left: calc(50% - 68px);
-  align-self: center;
-}
-
-@media (min-width: $tablet-width) {
-  .logo__text {
-    margin-left: calc(50% - 59px);
-  }
-}
-
 @media (min-width: $desktop-width) {
   .logo__text {
     width: 118px;

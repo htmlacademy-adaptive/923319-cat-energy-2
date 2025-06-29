@@ -8,6 +8,10 @@
   color: $special-dark-secondary-contrast-color;
 }
 
+.page__header {
+  border-bottom: 1px solid $border-color;
+}
+
 .page__body {
   min-height: 100%;
   margin: 0;
@@ -20,10 +24,11 @@
 @media (min-width: $tablet-width) {
   .page__header {
     @include max-size;
+    border-bottom: none;
     display: grid;
     grid-template-columns: 202px 1fr;
     width: 100%;
-    padding: 25px 30px;
+    padding: 24px 30px;
   }
 }
 
@@ -32,7 +37,7 @@
     background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), image-set("../images/banner-background-cat-desktop@1x.jpg" 1x, "../images/banner-background-cat-desktop@2x.jpg" 2x), linear-gradient(#4f4e54, #434248);
     background-repeat: no-repeat;
     background-position: top right, top right, top right;
-    background-size: 100% 694px, 720px 694px, 100% 694px;
+    background-size: 100% 694px, 720px 694px, 100% 693px;
   }
 
   .page__header {

@@ -8,6 +8,11 @@
   display: grid;
   grid-template-columns: auto 1fr;
   width: 100%;
+
+  .logo__text {
+    margin-left: calc(50% - 68px);
+    align-self: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -15,12 +20,22 @@
     margin: 0;
     align-items: flex-start;
   }
+
+  .main-header__logo {
+    .logo__text {
+      margin-left: calc(50% - 59px);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-header__logo {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     justify-content: start;
     gap: 14px;
+
+    .logo__text {
+      margin-left: 0;
+    }
   }
 }

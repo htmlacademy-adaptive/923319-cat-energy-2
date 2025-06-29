@@ -61,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .programs__wrapper {
-    margin: 30px;
+    margin: 0 30px;
   }
 
   .programs__item {
@@ -70,8 +70,8 @@
   }
 
   .programs__item--slim::before {
-    width: 200px;
-    height: 211px;
+    width: 198px;
+    height: 209px;
     top: 22%;
     left: 63%;
   }
@@ -99,13 +99,15 @@
     font-size: 20px;
     line-height: 30px;
     padding-top: 15px;
+    gap: 25px;
+    margin: 16px 0 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs__wrapper {
     @include max-size;
-    margin-top: 110px;
+    margin-top: 154px;
   }
 
   .programs__list {

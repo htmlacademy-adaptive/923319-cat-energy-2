@@ -1,11 +1,14 @@
-/* main-catalog */
+.main-catalog__item {
+  margin: 1px 0 3px;
+}
+
 .main-catalog__title {
   font-family: $second-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $contrast-color;
-  margin: 27px 20px;
+  margin: 27px 20px 40px;
 }
 
 .main-catalog__list {
@@ -16,16 +19,34 @@
   .main-catalog__title {
     font-size: 60px;
     line-height: 60px;
+    margin: 38px 30px;
   }
 
   .main-catalog__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
   }
+
+  .main-catalog__item {
+    margin: 15px 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-catalog__wrapper {
     @include max-size;
+  }
+
+  .main-catalog__title {
+    margin: 45px 0;
+  }
+
+  .main-catalog__list {
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 23px 80px;
+  }
+
+  .main-catalog__item {
+    margin: 0;
   }
 }

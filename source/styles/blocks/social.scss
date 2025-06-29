@@ -35,7 +35,7 @@
   &::before {
     content: "";
     display: block;
-    width: 28px;
+    width: 26px;
     height: 22px;
     mask-image: url("../../icons/stack.svg#icon-youtube");
     mask-repeat: no-repeat;
@@ -52,5 +52,17 @@
     mask-image: url("../../icons/stack.svg#icon-telegram");
     mask-repeat: no-repeat;
     background-color: $btn-bg-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-left: 43px;
+  }
+
+  .social__link--telegram::before {
+    width: 26px;
+    height: 20px;
+    margin-top: 3px;
   }
 }
