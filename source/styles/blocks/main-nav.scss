@@ -132,6 +132,7 @@
   .main-nav__link--active {
     &::after {
       background-color: $basic-bg-color;
+      right: 1px;
     }
   }
 
@@ -143,5 +144,6 @@
 
   .main-nav__list {
     gap: 5px 35px;
+    margin-top: 2px;
   }
 }

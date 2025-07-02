@@ -1,10 +1,10 @@
 /* main-banner */
 
 .main-banner {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, #ffffff 37%), image-set("../images/banner-background-cat-mobile@1x.jpg" 1x, "../images/banner-background-cat-mobile@2x.jpg" 2x), linear-gradient(#4f4e54, #434248);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, #ffffff 37%), image-set("../images/banner-background-cat-mobile@1x.webp" type("image/webp") 1x, "../images/banner-background-cat-mobile@2x.webp" type("image/webp") 2x, "../images/banner-background-cat-mobile@1x.jpg" type("image/jpeg") 1x, "../images/banner-background-cat-mobile@2x.jpg" type("image/jpeg") 2x), linear-gradient(#4f4e54, #434248);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100%, auto, 100%;
+  background-size: 100%, auto, 100% 99%;
   min-height: 480px;
 }
 
@@ -20,7 +20,7 @@
   color: $basic-color;
   text-align: center;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 26px;
   padding-bottom: 25px;
 }
 
@@ -36,13 +36,13 @@
 
 .main-banner__img {
   display: block;
-  margin: 25px auto;
+  margin: 28px auto;
 }
 
 .main-banner__button {
   text-align: center;
   padding: 10px;
-  margin: -19px 0 0;
+  margin: -24px 0 0;
   display: block;
 }
 
@@ -62,7 +62,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    max-width: 416px;
+    max-width: 420px;
     margin-left: 60px;
   }
 
