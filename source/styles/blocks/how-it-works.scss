@@ -1,0 +1,130 @@
+.how-it-works__wrapper {
+  margin: 20px 20px 49px;
+}
+
+.how-it-works__title {
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $contrast-color;
+  margin: 0 0 40px;
+}
+
+.how-it-works__list {
+  @include reset-ul;
+  margin: 0 0 40px;
+}
+
+.how-it-works__item {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.how-it-works__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $basic-bg-color;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  display: block;
+}
+
+.how-it-works__item--nutrients::before {
+  background-size: 30px 32px;
+  background-image: url("../../icons/stack.svg#icon_leaf");
+}
+
+.how-it-works__item--substance::before {
+  background-size: 26px 28px;
+  background-image: url("../../icons/stack.svg#icon-solution");
+}
+
+.how-it-works__item--exchange::before {
+  background-size: 25px 30px;
+  background-image: url("../../icons/stack.svg#icon_eat");
+}
+
+.how-it-works__item--time::before {
+  background-size: 25px 30px;
+  background-image: url("../../icons/stack.svg#icon-time");
+}
+
+@media (min-width: $tablet-width) {
+  .how-it-works {
+    border-bottom: 1px solid $special-border-color;
+  }
+
+  .how-it-works__wrapper {
+    margin: 0 30px;
+  }
+
+  .how-it-works__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 45px 0 40px;
+  }
+
+  .how-it-works__list {
+    counter-reset: how-it-works__item 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 60px;
+    margin: 0;
+  }
+
+  .how-it-works__item {
+    counter-increment: how-it-works__item 1;
+    position: relative;
+    min-height: 280px;
+    display: block;
+    padding: 10px 80px 30px 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 19px 0;
+  }
+
+  .how-it-works__item::before {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
+
+  .how-it-works__item::after {
+    content: counter(how-it-works__item);
+    color: #f2f2f2;
+    z-index: -1;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    top: -29px;
+    left: 115px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-it-works {
+    border-bottom: none;
+  }
+
+  .how-it-works__wrapper {
+    @include max-size;
+  }
+
+  .how-it-works__title {
+    margin: 40px 0;
+  }
+
+  .how-it-works__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 80px;
+  }
+
+  .how-it-works__item {
+    padding: 12px 1px 30px 0;
+  }
+}

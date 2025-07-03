@@ -1,0 +1,86 @@
+.slider {
+  position: relative;
+}
+
+.slider__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 280px;
+}
+
+.slider__img--before {
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider__img--after {
+  z-index: 10;
+  clip-path: inset(0 0 0 50%);
+}
+
+.slider__button {
+  height: 100%;
+  position: absolute;
+  width: 4px;
+  top: 0;
+  left: calc(50% - 2px);
+  border: none;
+  border-radius: 2px;
+  padding-inline: 0;
+  background-color: $btn-bg-color;
+  z-index: 20;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-bg-color;
+    transition: 1s;
+
+    &::before {
+      border: 2px solid $basic-bg-color;
+      transition: 1s;
+    }
+  }
+
+  &:active {
+    background-color: $second-bg-color;
+    opacity: 0.6;
+    transition: 1s;
+
+    &::before {
+      border: 2px solid rgba(94, 170, 47, 0.6);
+      transition: 1s;
+    }
+  }
+}
+
+.slider__button::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 20px);
+  left: -18px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: $basic-color;
+  border: 2px solid $btn-bg-color;
+  cursor: pointer;
+}
+
+.slider__button::after {
+  content: "";
+  width: 24px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#dragme-button");
+  background-color: inherit;
+  display: block;
+  position: absolute;
+  top: calc(50% - 9px);
+  left: -10px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__img {
+    width: 560px;
+  }
+}

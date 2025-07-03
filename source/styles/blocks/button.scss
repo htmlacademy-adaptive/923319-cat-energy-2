@@ -1,0 +1,54 @@
+/* button */
+.button {
+  font-size: 16px;
+  font-family: $second-font;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: fit-content;
+}
+
+.button--main {
+  color: $basic-color;
+  background-color: $basic-bg-color;
+  text-align: center;
+  border: none;
+
+  &:hover {
+    background-color: $second-bg-color;
+  }
+
+  &:active {
+    color: $basic-color-pressed;
+  }
+}
+
+.button--second {
+  color: $special-dark-secondary-contrast-color;
+  background-color: $secondary-contrast-color;
+}
+
+.button--to-look {
+  color: $contrast-color;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 12px;
+    background-image: url("../../icons/stack.svg#icon-arrow");
+    background-repeat: no-repeat;
+    background-size: 32px 12px;
+    background-position: 100%;
+  }
+
+  &:hover {
+    &::after {
+      width: 32px;
+      transition: 0.5s;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

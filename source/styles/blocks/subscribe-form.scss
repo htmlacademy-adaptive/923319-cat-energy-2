@@ -1,0 +1,39 @@
+/* subscribe-form */
+.subscribe-form__email {
+  font-size: 20px;
+  font-family: $second-font;
+  line-height: 30px;
+  font-weight: 400;
+  color: $special-dark-secondary-contrast-color;
+  text-transform: uppercase;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid $input-border-color;
+
+  &:hover {
+    border: 1px solid $second-border-color;
+  }
+
+  &:focus {
+    border: 1px solid $special-dark-secondary-contrast-color;
+  }
+}
+
+.subscribe-form__email--error {
+  border: 1px solid $input-error-border-color;
+}
+
+.subscribe-form__button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 15px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .subscribe-form__button {
+    padding: 15px 70px;
+    margin: 0;
+  }
+}

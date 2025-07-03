@@ -1,0 +1,53 @@
+.indicator__value {
+  font-family: $second-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $contrast-color;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 14px auto 18px;
+  padding: 15px;
+  border: 1px solid $second-border-color;
+  border-radius: 3px;
+}
+
+.indicator__name {
+  font-family: $primary-font;
+  background-color: $special-secondary-contrast-color;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  padding: 0 10px;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95px;
+}
+
+@media (min-width: $tablet-width) {
+  .indicator__value {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 17px;
+  }
+
+  .indicator__name {
+    background-color: $basic-color;
+    font-size: 14px;
+    line-height: 14px;
+    width: fit-content;
+    max-width: 142px;
+    padding: 0 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .indicator__name {
+    background-color: $secondary-contrast-color;
+  }
+
+  .indicator__value {
+    padding: 14px 14px 18px;
+  }
+}
