@@ -17,6 +17,11 @@
   &:focus {
     border: 1px solid $special-dark-secondary-contrast-color;
   }
+
+  &:disabled {
+    outline: 1px solid #cdcdcd;
+    opacity: 0.3;
+  }
 }
 
 .subscribe-form__email--error {
@@ -29,6 +34,11 @@
   padding: 15px;
   font-size: 20px;
   line-height: 26px;
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
