@@ -33,6 +33,7 @@
     display: flex;
     min-height: 200px;
     align-items: center;
+    justify-content: space-between;
     padding: 43px 78px;
 
     &::before {
@@ -44,6 +45,7 @@
 
   .gift-banner__title {
     text-align: left;
+    margin: 0 48px 0 auto;
   }
 }
 
@@ -54,7 +56,7 @@
     padding: 43px 40px 20px;
 
     &::before {
-      margin: 13px auto 47px;
+      margin: 13px auto 48px;
     }
   }
 
