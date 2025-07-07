@@ -52,7 +52,8 @@
   }
 
   .main-banner__wrapper {
-    margin: 0 30px;
+    max-width: 709px;
+    margin: 0 auto;
     padding: 10px 30px 510px;
     position: relative;
   }
@@ -82,6 +83,7 @@
     position: absolute;
     bottom: -40px;
     left: 0;
+    margin: 25px auto;
   }
 
   .main-banner__button {
@@ -114,6 +116,7 @@
 
   .main-banner__button {
     width: fit-content;
+    max-width: 430px;
     margin-left: 50px;
     padding: 15px 28px;
   }
