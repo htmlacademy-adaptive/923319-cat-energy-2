@@ -34,6 +34,18 @@
 .catalog-card__link {
   text-decoration: none;
   color: $special-dark-third-contrast-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-card__img {
